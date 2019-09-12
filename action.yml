@@ -1,10 +1,11 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
-inputs:
-  myInput:              # change this
-    description: 'input description here'
-    default: 'default value if applicable'
+name: 'Github Issue Labeler'
+description: 'Automatically apply a label to new Github issues in a repository'
+author: 'HumanCellAtlas'
+inputs: 
+  repo-token:
+    description: 'The GITHUB_TOKEN secret'
+  label:
+    description: 'The name of the label to apply to issues'
 runs:
   using: 'node12'
   main: 'lib/main.js'
