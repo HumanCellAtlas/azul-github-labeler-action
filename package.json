@@ -5,7 +5,7 @@
   "description": "Automatically apply a label to new Github issues in a repository",
   "main": "lib/main.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && npm prune --production && git add -f node_modules lib package-lock.json && npm install",
     "test": "jest"
   },
   "repository": {
